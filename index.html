@@ -5,9 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://assets-cdn.github.com/favicon.ico">
-    <title>Document</title>
+    <title>Butterfly</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+    	h2 {
+    		position: absolute;
+    		width: 100%;
+    		height: 100px;
+    		text-align: center;
+    		top: 50%;
+    		margin-top: -50px;
+    		font-size: 100px;
+    		line-height: 100px;
+    		font-weight: bolder;
+    		font-family: Microsoft YaHei;
+    		background: linear-gradient(to bottom, #49ACE2, #234C9F);
+          	-webkit-background-clip: text;
+          	color: transparent;
+    	}
+    	.welcome-text {
+    		/*display: none;*/
+    	}
+    </style>
+
 </head>
 <body>
-    welcome to my page!
+    <h2 class="welcome-text">welcome!</h2>    
+    <ul class="loader-box">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+	<script>
+		let tit = document.querySelector('.welcome-text');
+		let loadModel = document.querySelector('.loader-box');
+
+		setTimeout(function() {
+			tit.style.display = 'block';
+			loadModel.style.display = 'none';
+		}, 1000)
+	</script>
 </body>
 </html>
